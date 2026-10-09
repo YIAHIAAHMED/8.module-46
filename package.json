@@ -15,8 +15,15 @@
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
-    "eslint": "^9",
+    "daisyui": "^5.7.47",
+    "eslint": "^9.39.5",
     "eslint-config-next": "16.4.0",
     "tailwindcss": "^4"
+  },
+  "overrides": {
+    "eslint-config-next": {
+      "braces": "^3.0.3"
+    },
+    "braces": "^3.0.3"
   }
 }
