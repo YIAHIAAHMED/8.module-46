@@ -1,9 +1,13 @@
-
+import Image from "next/image";
+import logo from '@/assets/logo.png';
+import { compareAsc, format } from "date-fns";
 
 const Header = () => {
     return (
-        <div>
-            Header
+        <div className="text-center py-8 space-y-2">
+            <Image src = {logo} width = {300} height = {200} alt= 'Logo' className="mx-auto" />
+            <p>Journalism without fear or Favour</p>
+            <p>{format (new Date(),  "eeee, MMMM dd, yyyy")}</p>
         </div>
     );
 };
