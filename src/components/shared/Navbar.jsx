@@ -1,14 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
+import NavLink from './NavLink';
 
 const Navbar = () => {
     return (
         <div className='flex justify-between'>
             <div className=""></div>
             <ul className='flex justify-between gap-3'>
-                <li><Link href={'/'}>Home</Link></li>
-                <li><Link href={'/about-us'}>About</Link></li>
-                <li><Link href={'/career'}>Career</Link></li>
+                <li><NavLink href={'/'}>Home</NavLink></li>
+                <li><NavLink href={'/about-us'}>About</NavLink></li>
+                <li><NavLink href={'/career'}>Career</NavLink></li>
             </ul>
             <div className="">
                 <button><Link href={'/login'}>login</Link></button>
